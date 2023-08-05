@@ -99,9 +99,9 @@ func TripleEcbDesDecrypt(crypted, key []byte) ([]byte, error) {
 
 func main() {
 	// 定义密钥，长度必须是24字节
-	key := []byte("FB8F3884C2183D3C19712EEA")
+	key := []byte("这是一串加密密钥")
 	// 定义明文
-	plaintext := []byte("99999$241050445D03C0CC9F948AD5556620B8$01234455721111$0010039900B030100001001122334455$192.168.1.1$00:11:22:33:44:55$$CTC")
+	plaintext := []byte("这是明文字符串")
 	fmt.Println("明文：", string(plaintext))
 	// 加密明文
 	ciphertext, err := TripleEcbDesEncrypt(plaintext, key)
